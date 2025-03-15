@@ -6,7 +6,9 @@
     "dev": "nodemon",
     "build": "next build && tsc -p tsconfig.server.json",
     "start": "NODE_ENV=production node dist-server/index.js",
-    "lint": "next lint"
+    "lint": "next lint",
+    "docker-build": "docker build -t custom-server .",
+    "docker-run": "docker run --rm -it -p 3000:3000 custom-server"
   },
   "dependencies": {
     "express": "^4.21.2",
