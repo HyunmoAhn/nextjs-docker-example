@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "docker-build": "docker build -t basic .",
+    "docker-run": "docker run --rm -it -p 3000:3000 basic"
   },
   "dependencies": {
     "react": "^19.0.0",
