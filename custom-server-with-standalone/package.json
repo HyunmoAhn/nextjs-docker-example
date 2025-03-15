@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "nodemon",
-    "build": "ts-node --project tsconfig.server.json scripts/build-server.ts",
+    "build": "next build && ts-node --project tsconfig.server.json scripts/build-server.ts",
     "start": "NODE_ENV=production node dist-server/index.js",
     "lint": "next lint",
     "docker-build": "docker build -t custom-server-with-standalone .",

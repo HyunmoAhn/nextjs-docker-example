@@ -5,6 +5,7 @@ COPY .next/standalone ./
 COPY .next/static ./.next/static
 COPY public ./public
 COPY dist-server ./
+COPY node_modules/next ./node_modules/next
 
 ENV NODE_ENV=production
 
